@@ -1,0 +1,60 @@
+.traffic-block {
+    display: flex;
+    gap: 25px;
+}
+
+.traffic-left {
+    width: 80px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 15px;
+    background: #282828;
+    padding: 50px;
+    border-radius: 24%;
+}
+
+.traffic-left button {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: grey;
+    border: none;
+    cursor: pointer;
+}
+
+.traffic-right {
+    width: 80px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    background: #282828;
+    padding: 50px;
+    border-radius: 24%;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+}
+
+.traffic-right h1 {
+    font-size: 70px;
+}
+
+#red_btn.active {
+    background-color: red;
+}
+
+#yellow_btn.active {
+    background-color: yellow;
+}
+
+#green_btn.active {
+    background-color: green;
+}
+
+.traffic-right button {
+    transition: background-color 0.3s ease;
+}
+
+#red_btn.active, #yellow_btn.active, #green_btn.active {
+    transition: background-color 0.3s ease;
+}
